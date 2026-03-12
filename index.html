@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gesture Page</title>
+
+<style>
+body{
+    margin:0;
+    background:black;
+    color:white;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#gesture{
+    font-size:180px;
+    margin:30px;
+    display:none; /* hidden at start */
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:white;
+    color:black;
+    transition:0.3s;
+}
+
+button:hover{
+    background:gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1 id="title">Hello 👋</h1>
+
+    <div id="gesture">🖕</div>
+
+    <button onclick="changeText()">Click Me</button>
+</div>
+
+<script>
+function changeText(){
+    document.getElementById("title").innerText = "naa ko fak yo nemo";
+    document.getElementById("gesture").style.display = "block";
+}
+</script>
+
+</body>
+</html>
